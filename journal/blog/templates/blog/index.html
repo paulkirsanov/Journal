@@ -1,0 +1,10 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+<a href="about/">О нас</a>
+{% for p in posts %}
+    <h2><a href="{{ p.get_absolute_url }}">{{p.title}}</a></h2>
+{% endfor %}
+
+{% endblock %}

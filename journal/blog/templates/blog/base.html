@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+
+{% block mainmenu %}
+{% endblock mainmenu %}
+<!-- Блок контента -->
+	<div class="content-text">
+{% block content %}
+{% endblock %}
+    </div>
+</body>
+</html>
